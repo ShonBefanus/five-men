@@ -1,0 +1,10 @@
+{
+  "name": "five-men",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "description": "Resolve Einsteint zebra puzzle",
+  "repository": "https://github.com/ShonBefanus/five-men.git",
+  "author": "Mikhail",
+  "private": false
+}
