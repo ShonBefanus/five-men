@@ -1,0 +1,156 @@
+{
+    "root": true,
+    "globals": {
+        "JQuery": true
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "es2020": true,
+        "commonjs": true,
+        "jquery": true,
+        "cypress/globals": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "cypress",
+        "chai-friendly",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "cypress/no-assigning-return-values": "error",
+        "cypress/no-unnecessary-waiting": "error",
+        "cypress/assertion-before-screenshot": "error",
+        "cypress/no-force": "error",
+        "cypress/no-async-tests": "error",
+        "no-unused-expressions": 2,
+        "chai-friendly/no-unused-expressions": 2,
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "@typescript-eslint/no-unused-vars": 2,
+        "@typescript-eslint/no-explicit-any": 2,
+        "@typescript-eslint/no-namespace": 2,
+        "no-undef": ["error"],
+        "no-console": ["error"],
+        "no-empty-function": ["error"],
+        "no-new-func": ["error"],
+        "require-await": ["error"],
+        "array-bracket-spacing": ["error", "never"],
+        "block-spacing": "error",
+        "brace-style": "error",
+        "comma-spacing": ["error", {"before": false, "after": true}],
+        "computed-property-spacing": ["error", "never"],
+        "func-call-spacing": ["error", "never"],
+        "no-multi-assign": "error",
+        "keyword-spacing": ["error", {"before": true}],
+        "no-underscore-dangle": "error",
+        "no-unneeded-ternary": "error",
+        "prefer-template": "error",
+        "rest-spread-spacing": ["error", "never"],
+        "space-infix-ops": "error",
+        "lines-between-class-members": ["error", "always"],
+        "key-spacing":  ["error", {"beforeColon" : false, "afterColon" : true}],
+        "block-scoped-var": "error",
+        "complexity": "error",
+        "consistent-return": "error",
+        "curly": "error",
+        "default-case": "error",
+        "dot-location": ["error", "property"],
+        "dot-notation": ["error", {"allowKeywords": false}],
+        "eqeqeq": "error",
+        "guard-for-in": "error",
+        "no-alert": "error",
+        "no-caller": "error",
+        "no-implicit-globals": "error",
+        "no-self-compare": "error",
+        "no-multi-spaces": "error",
+        "no-throw-literal": "error",
+        "no-useless-concat": "error",
+        "no-warning-comments": "error",
+        "no-undef-init": "error",
+        "no-use-before-define": "error",
+        "array-bracket-newline": "error",
+        "array-element-newline": ["error", "consistent"],
+        "camelcase": ["error", {"ignoreGlobals": false, "ignoreImports":  true, "ignoreDestructuring": true, "properties": "never"}],
+        "comma-dangle": ["error", "never"],
+        "comma-style": ["error", "last"],
+        "function-paren-newline": ["error", "multiline"],
+        "func-name-matching": ["error", "always"],
+        "func-style": ["error", "expression"],
+        "function-call-argument-newline": ["error", "consistent"],
+        "id-denylist": ["error", "data", "callback"],
+        "id-length": ["error",{"min":  2}],
+        "max-len": ["error", {"code": 113, "tabWidth": 4}],
+        "max-params": ["error", 3],
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multiple-empty-lines": ["error", {"max": 2}],
+        "no-negated-condition": "error",
+        "no-nested-ternary": "error",
+        "no-trailing-spaces": "error",
+        "no-whitespace-before-property": "error",
+        "nonblock-statement-body-position": ["error", "below"],
+        "object-curly-newline": ["error", {
+
+            "ObjectPattern": { "multiline": true },
+            "ImportDeclaration": "never",
+            "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+        }],
+        "object-property-newline": ["error", {"allowAllPropertiesOnSameLine": true}],
+        "object-curly-spacing": ["error", "never"],
+        "one-var-declaration-per-line": ["error", "initializations"],
+        "operator-assignment": ["error", "always"],
+        "operator-linebreak": ["error", "before"],
+        "padded-blocks": ["error", "never"],
+        "padding-line-between-statements":  [
+            "error",
+            { "blankLine": "always", "prev": ["import"], "next": ["*"]},
+            { "blankLine": "never", "prev": ["import"], "next": ["import"]},
+            { "blankLine": "always", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]}
+        ],
+        "prefer-object-spread": "error",
+        "quote-props": ["error", "consistent-as-needed"],
+        "semi-spacing": ["error", {"before": false, "after": true}],
+        "semi-style": ["error", "last"],
+        "space-before-blocks": ["error", { "functions": "never", "keywords": "always", "classes": "never" }],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "always",
+            "asyncArrow": "always"
+        }],
+        "space-in-parens": ["error", "never"],
+
+        "space-unary-ops": [
+            2, {
+                "words": true,
+                "nonwords": false,
+                "overrides": {
+                    "new": false,
+                    "++": true
+                }
+            }],
+        "switch-colon-spacing": "error",
+        "template-tag-spacing": ["error", "never"],
+        "no-confusing-arrow": "error",
+        "no-var": "error",
+        "template-curly-spacing": ["error", "never"],
+        "yield-star-spacing": ["error", {"before": false, "after": true}],
+        "arrow-body-style": ["error", "as-needed"],
+        "eol-last": ["error", "always"],
+        "arrow-spacing": ["error", { "before": true, "after": true }]
+    },
+    "overrides": [
+        {
+            "files": ["./test/cypress/integration/*.ts"]
+        }
+    ]
+}
